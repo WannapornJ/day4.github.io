@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations Test</title>
+</head>
+<body>
+    <div class="layout">
+        <h1>Hello</h1>
+        <div class="line"></div>
+    </div>
+
+    <style>
+        .layout{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        .line{
+            border: 1px solid lightgray;
+            background-color: white;
+            width: 50%;
+            height: 2px;
+            animation-name: line-extend;
+            animation-duration: 5s;
+        }
+        @keyframes line-extend {
+            0%{border: none; background-color: violet; width: 5%;}
+            20%{border: none; background-color: royalblue; width: 20%;}
+            40%{border: none; background-color: yellowgreen; width: 40%;}
+            60%{border: none; background-color: yellow; width: 60%;}
+            80%{border: none; background-color: orange; width: 80%;}
+            100%{border: none; background-color: crimson; width: 100%;}
+        }
+    </style>
+</body>
+</html>
